@@ -1,0 +1,46 @@
+{% set name = "PyInquirer" %}
+{% set version = "1.0.3" %}
+
+package:
+  name: "{{ name|lower }}"
+  version: "{{ version }}"
+
+source:
+  url: "https://github.com/CITGuru/{{ name }}/archive/{{ version }}.tar.gz"
+  sha256: "943d6851493a7b8625883dddcd3790361d39aa2c9e8706f62b43effb58915785"
+
+build:
+  number: 0
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv "
+
+requirements:
+  host:
+    - pip
+    - prompt_toolkit ==1.0.14
+    - pygments >=2.2.0
+    - python
+    - regex >=2016.11.21
+  run:
+    - prompt_toolkit ==1.0.14
+    - pygments >=2.2.0
+    - python
+    - regex >=2016.11.21
+
+test:
+  imports:
+    - PyInquirer
+    - PyInquirer.prompts
+    - examples
+
+about:
+  home: "https://github.com/CITGuru/PyInquirer/"
+  license: "MIT"
+  license_family: "MIT"
+  license_file: ""
+  summary: "A Python module for collection of common interactive command line user interfaces, based on Inquirer.js"
+  doc_url: ""
+  dev_url: ""
+
+extra:
+  recipe-maintainers:
+    - your-github-id-here

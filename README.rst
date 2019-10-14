@@ -9,6 +9,8 @@ PythonInquirer
     :target: #sponsors
 
 
+***Creating a conda meta file to build conda packages***
+
 **Github is starting to invite developers in from the GitHub Sponsors waitlist!**
 
 Your recommendations matter, so be sure to nominate `me and other contributors <https://github.com/CITGuru/PyInquirer/graphs/contributors>`__ of this project you'd like to see on GitHub Sponsors next by using the form in this link: http://github.co/2IHdeOw
